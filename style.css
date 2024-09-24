@@ -12,6 +12,23 @@
     src: url(./assets/fonts/RobotoCondensed.ttf);
 }
 
+/* CSS Variables  */
+:root{
+ /* color variables */
+     --black: #000000 ;
+    --darker: #012326 ; 
+    --dark: #013a40 ; 
+    --mid: #025e73 ; 
+    --light: #4193a6 ; 
+    --lighter: #84b9bf ; 
+    --white: #ffffff ;
+ /* font-variables  */
+    --font-size: 1.3rem ;
+    --robo: Roboto ;
+    --Nuno: NunitoSans  ;
+}
+
+/* CSS Normalization / border-box model  */
 html{
     box-sizing: border-box;
 }
