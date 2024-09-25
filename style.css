@@ -85,7 +85,9 @@ nav a{
     color: var(--white) ;
     display: block ;
 }
-nav a:hover{
+
+nav a:hover,
+nav [class*="fa-"]:hover{
     color: var(--magenta)
 }
 
@@ -93,6 +95,29 @@ nav li:first-child{
     flex-basis: 100%;
     /* text-align: center;  */
 }
+
+/* for icons  */
+nav [class*="fa-"]{
+    font-size: 150% ; 
+    color: var(--aqua) ;
+    padding-left: 3px ; 
+}
+
+nav h1[class*="fa-"]{
+    font-size: 100% ; 
+    color: var(--aqua) ;
+}
+
+.button{
+    background-color: var(--magenta);
+    padding: 0.5rem ;
+    border-radius: 5px;
+    &:hover{
+        color: var(--white) ;
+        background-color: var(--hotmg);
+    }
+}
+
 
 /* #Intro Styling  */
 #intro{
@@ -139,4 +164,37 @@ a{
 
 #contact p:last-child{
     margin-top: 3rem ; 
+}
+
+/* footer style **/
+footer{
+    text-align: center ;
+}
+
+footer ul{
+    list-style-type: none;
+    padding: 0 ; 
+    margin: 2rem 0 ; 
+    display: flex ; 
+    flex-flow: row wrap ; 
+    justify-content: center;
+    gap: 3rem ;
+    font-size: 3rem ;
+}
+
+
+ /* //// MEDIA QUERY ////  */
+
+@media (min-width: 850px){
+    nav{
+        max-width: 1200px ; 
+        margin: 0 auto ; 
+    }
+    nav li:first-child{
+        flex-basis: auto ;
+        text-align: left ; 
+        margin-right: auto ;
+    }
+
+
 }
