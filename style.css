@@ -1,31 +1,36 @@
 /* including font  */
 @font-face {
-    font-family: NunitoSans;
-    src: url(./assets/fonts/NunitoSans.ttf);
+    font-family: Oxygen ;
+    src: url(./assets/fonts/Oxygen.ttf);
 }
+
 @font-face {
-    font-family: Roboto;
-    src: url(./assets/fonts/Roboto.ttf);
-}
-@font-face {
-    font-family: RobotoCondensed;
-    src: url(./assets/fonts/RobotoCondensed.ttf);
+    font-family: Oxygen-Mono ;
+    src: url(./assets/fonts/OxygenMono.ttf);
 }
 
 /* CSS Variables  */
 :root{
  /* color variables */
-     --black: #000000 ;
-    --darker: #012326 ; 
+    --black: #171321 ;
+    --dkblue: #0d314b ; 
+    --plum: #4b0849 ;
+    --hotmg: #ff17e4 ;
+    --magenta: #e410cb ; 
+    --aqua: #86fbfb ; 
+    --white: #f7f8fa ;
+
+ /* discarded colors that i wanted to use but din't cause i'm not good with color theory  */
+    /* --darker: #012326 ; 
     --dark: #013a40 ; 
     --mid: #025e73 ; 
     --light: #4193a6 ; 
-    --lighter: #84b9bf ; 
-    --white: #ffffff ;
+    --lighter: #84b9bf ;  */
+
  /* font-variables  */
     --font-size: 1.3rem ;
-    --robo: Roboto ;
-    --Nuno: NunitoSans  ;
+    --ox: Oxygen ;
+    --mono : Oxygen-Mono ;
 }
 
 /* CSS Normalization / border-box model  */
@@ -42,5 +47,96 @@ html{
 body{
     padding: 0 ; 
     margin : 0 ; 
-    font-family: 'Robot', 'NunitoSans', 'RobotoCondensed' ; 
+    font-family: var(--ox), var(--mono) ; 
+    background-color: var(--black) ;
+    color: var(--white);
+    font-size: var(--font-size) ;
+}
+
+h1, h2, h3{
+    margin: 0 ;
+}
+
+/* Navbar Styling  */
+nav{
+    font-family: var(--mono);
+    font-size: 80% ;
+    padding: 1rem ;
+}
+
+nav h1 a{
+    font-family: var(--ox);
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0 ; 
+    padding: 0 ; 
+    display: flex ; 
+    /* flex-direction: row ;
+    flex-wrap: wrap ;  */
+    flex-flow: row wrap ; 
+    justify-content: center;
+    align-items: center;
+    gap: 2rem ;
+}
+
+nav a{
+    color: var(--white) ;
+    display: block ;
+}
+nav a:hover{
+    color: var(--magenta)
+}
+
+nav li:first-child{
+    flex-basis: 100%;
+    /* text-align: center;  */
+}
+
+/* #Intro Styling  */
+#intro{
+    padding: 10px ; 
+}
+
+#intro p{
+    font-size: 1rem ; 
+    line-height: 1.5;
+}
+
+#intro .name{
+    font-family: var(--mono) ;
+}
+
+.name span{
+    font-family: var(--ox); 
+    font-size: 4rem;
+    color: var(--aqua) ;
+    display: block ; 
+}
+
+#intro h2{
+    font-size: 4rem ; 
+    font-weight: normal ;
+}
+
+a{
+    color: var(--magenta) ;
+    text-decoration: none;
+    &:hover{
+        color: var(--hotmg) ; 
+        /* text-decoration: underline; */
+    }
+}
+
+/* Contact Section*/
+#contact{
+    width: 500px ;
+    text-align: center ;
+    margin: 0 auto ; 
+    padding: 3rem 0 ; 
+}
+
+#contact p:last-child{
+    margin-top: 3rem ; 
 }
