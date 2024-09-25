@@ -4,7 +4,7 @@ Welcome to my personal (basic ahh) portfolio website, built to showcase my proje
 
 ## Live Demo
 
-Check out the live version of my portfolio here: [Portfolio Website](https://neoayus.github.io/memfolio/)
+Check out the live version of my portfolio here: [MEMFOLIO](https://neoayus.github.io/memfolio/)
 
 
 ## Technologies Used
