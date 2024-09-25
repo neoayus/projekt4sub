@@ -101,6 +101,17 @@ nav ul{
     gap: 2rem ;
 }
 
+nav ul li h1{
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.fa-code{
+    margin-right: 8px; 
+}
+
+
 nav a{
     color: var(--white) ;
     display: block ;
@@ -160,14 +171,15 @@ nav h1[class*="fa-"]{
 
 .name span{
     font-family: var(--ox); 
-    font-size: 4rem;
+    font-size: 3rem;
+    font-weight: 600;
     color: var(--aqua) ;
     display: block ; 
 }
 
 #intro h2{
-    font-size: 4rem ; 
-    font-weight: normal ;
+    font-size: 2.5rem ; 
+    font-weight: 700 ;
 }
 
 a{
@@ -185,7 +197,7 @@ a{
     width: 500px ;
     text-align: center ;
     margin: 0 auto ; 
-    padding: 3rem 0 ; 
+    padding: 2rem 0 ; 
 }
 
 #contact p:last-child{
@@ -195,7 +207,11 @@ a{
 /* footer style **/
 footer{
     text-align: center ;
-    padding: 4rem 0 ; 
+    padding: 2rem 0 ; 
+}
+
+footer h2{
+    font-size: 1.7rem ;
 }
 
 footer ul{
@@ -206,7 +222,7 @@ footer ul{
     flex-flow: row wrap ; 
     justify-content: center;
     gap: 3rem ;
-    font-size: 3rem ;
+    font-size: 2rem ;
 }
 
 /* Project Section  */
@@ -297,5 +313,11 @@ footer ul{
         flex-basis: auto ;
         text-align: left ; 
         margin-right: auto ;
+    }
+}
+
+@media (max-width: 500px){
+    #contact{
+        width: 380px ;
     }
 }
