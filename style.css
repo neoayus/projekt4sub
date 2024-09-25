@@ -57,6 +57,17 @@ h1, h2, h3{
     margin: 0 ;
 }
 
+/* Background Color Divisions  */
+.section-plum{
+    background-color: var(--plum);
+}
+
+.gradient{
+    background: linear-gradient(90deg, rgba(255,23,228,1) 0%, rgba(134,251,251,1) 100%);
+    height: 2px; 
+}
+
+
 /* Navbar Styling  */
 nav{
     font-family: var(--mono);
@@ -109,9 +120,12 @@ nav h1[class*="fa-"]{
 }
 
 .button{
+    color: white ;
     background-color: var(--magenta);
     padding: 0.5rem ;
     border-radius: 5px;
+    font-family: var(--mono);
+    text-decoration: none;
     &:hover{
         color: var(--white) ;
         background-color: var(--hotmg);
@@ -121,7 +135,9 @@ nav h1[class*="fa-"]{
 
 /* #Intro Styling  */
 #intro{
-    padding: 10px ; 
+    padding: 4rem 1rem 10rem 1rem ; 
+    max-width: 1200px;
+    margin: 0 auto ;
 }
 
 #intro p{
@@ -155,6 +171,7 @@ a{
 }
 
 /* Contact Section*/
+
 #contact{
     width: 500px ;
     text-align: center ;
@@ -169,6 +186,7 @@ a{
 /* footer style **/
 footer{
     text-align: center ;
+    padding: 4rem 0 ; 
 }
 
 footer ul{
