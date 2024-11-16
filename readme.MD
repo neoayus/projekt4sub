@@ -8,7 +8,7 @@ Welcome to our personal (basic ahh) portfolio website, built to showcase our pro
 
 ## Live Demo
 
-Check out the live version of our portfolio here: [YGfolio](https://neoayus.github.io/ygfolio/)
+Check out the live version of our portfolio here: [YGfolio](https://projekt4sub.netlify.app/)
 
 ## Technologies Used
 
@@ -20,7 +20,7 @@ Check out the live version of our portfolio here: [YGfolio](https://neoayus.gith
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/neoayus/ygfolio.git
+   git clone https://github.com/neoayus/projekt4sub.git
    ``` 
 
 ---
